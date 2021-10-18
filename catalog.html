@@ -3,31 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: «Девайс»</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
+      <img class="logo" src="image\devace.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <input type="submit">
-            <input type="text" name="find" placeholder="Поиск по сайту">
+            <form action="" method="get"><!--какую ссылку здесь указать-->
+              <input type="submit">
+              <input type="text" name="find" placeholder="Поиск по сайту">
+            </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog">">Каталог товаров</a>
+            <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+            <a class="navigation-link-man" href="#">Коля Петухов</a>
+          <li class="navigation-item">
+            <a class="navigation-link-output" href="#">Выйти</a>  
           </li>
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
+            <a class="navigation-link-compare" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
+            <a class="navigation-link-basket" href="#">Корзина</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list-info">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
@@ -42,25 +48,29 @@
     </header>
     <main class="main-catalog">
       <section>
-        <h1>
+        <h1 class="title-product">
           Моноподы для селфи
         </h1>
         <ul>
           <li>
-            <a class="catalog-nav" href="index.html">Главная</a>
+            <a class="breadcrumbs" href="index.html">Главная</a>
           </li>
           <li>
-            <a class="catalog-nav" href="#">Каталог товаров</a>
+            <a class="breadcrumbs" href="#">Каталог товаров</a>
           </li>
           <li>
-            <a class="catalog-nav">Моноподы для селфи</a>
+            <a class="breadcrumbs">Моноподы для селфи</a>
           </li>
         </ul>
       </section>
       <section class="catalog-products">
-        <h2> 
-          фильтр:
+        <h2 class="visually-hidden"> 
+          Фильтр товар электротехники
         </h2>
+        <span class="sorting">
+          фильтр:
+        </span>
+        <div class="sorting-list">
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
@@ -144,49 +154,53 @@
 
           <button class="button" type="submit">Показать</button>
         </form>
-        <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap">Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
-          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-        </form>
+        </div>
+        <div class="sorting-block">
+          <form class="sorting-type">
+            <label class="sorting-product" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="popular">Сначала популярное</option>
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+          </form>
+        </div>
         <!--тут должны быть две конпки есть по ним вопрос поэтому специально их пропустил -->
         <ul>
           <li>
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="image\catalog\product-1.png" width="360" height="380" alt="Любительская селфи-палка">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
-            <a href="#">Подробнее</a>
+            <a class="more-details" href="#">Подробнее</a>
           </li>
           <li>
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="image\catalog\product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
               <h3 class="product-card-title">Профессиональная селфи-палка </h3>
             </a>
             <b class="product-card-price">1 500 ₽</b>
-            <a class="visually-hidden" href="#">Подробнее</a>
+            <a class="visually-hidden more-details" href="#">Подробнее</a>
           </li>
           <li>
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="image\catalog\product-3.png" width="360" height="380" alt="Непотопляемая
+              селфи-палка">
               <h3 class="product-card-title">Непотопляемая
                 селфи-палка</h3>
             </a>
             <b class="product-card-price">2 500 ₽</b>
-            <a class="visually-hidden" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
+            <a class="visually-hidden more-details" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
           </li>
           <li>
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
+              <img class="product-card-image" src="image\catalog\product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b class="product-card-price">4 900 ₽</b>
-            <a class="visually-hidden" href="#">Подробнее</a>
+            <a class="visually-hidden more-details" href="#">Подробнее</a>
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить еще</button>
@@ -221,20 +235,20 @@
 
     </main>
     <footer class="page-footer">
-      <p>
+      <p class="footer-adress">
           Санкт-Петербург, набережная 
 реки Карповки, 5, литера П.
       </p>
       <section>
-        <ul class="navigation-list">
+        <ul class="navigation-list-footer">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link-footer" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link-footer" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link-footer" href="#">Контакты</a>
           </li>
         </ul>
       </section> 
