@@ -9,9 +9,9 @@
     <header class="page-header">
       <img class="logo" src="image\devace.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list-find">
           <li class="navigation-item">
-            <form action="" method="get"><!--какую ссылку здесь указать-->
+            <form action="https://echo.htmlacademy.ru" method="get"><!--какую ссылку здесь указать-->
               <input type="submit">
               <input type="text" name="find" placeholder="Поиск по сайту">
             </form>
@@ -19,11 +19,12 @@
           <li class="navigation-item">
             <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
           </li>
+        </ul>
+        <div class="header-catalog">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link-entrance" href="#">Войти</a>
           </li>
-        </ul>
-        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link-compare" href="#">Сравнить</a>
           </li>
@@ -42,13 +43,14 @@
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
+      </div>
        </nav>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="text-slider">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
-      <div>
-        <p class="content-text">
-          <em>
+         <p class="content-text">
+          <em class="tagline">
             Порхает как бабочка,
 жалит как пчела!
           </em> <br>Этот обычный, на первый взгляд, квадрокоптер оснащен 
@@ -80,50 +82,50 @@
           </li>
         </ol>  
           <p class="data">
-            <i>800 м 
+            <i class="number">800 м 
             </i>
 Дальность полета
           </p>
           <p class="data">
-            <i>50 м
+            <i class="number">50 м
             </i>
 Радиус поражения
           </p>
       </div>
       <article class="product-card-list">
-        <div>
+        <div class="product-card-link-all">
           <a class="product-card-link" href="#">
             <img class="card" src="image\logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
             <h2 class="product">Виртуальная
               реальность</h2>
           </a>
         </div>
-        <div> 
+        <div class="product-card-link-all"> 
           <a class="product-card-link" href="#">
             <img class="card" src="image\logo2.svg" width="85" height="117" alt="Монопод">
             <h2 class="product">Моноподы 
               для селфи</h2>   
           </a>
         </div>
-        <div>
+        <div class="product-card-link-all">
           <a class="product-card-link" href="#">
             <img class="card" src="image\logo3.svg" width="71" height="87" alt="Камера">
             <h2 class="product">Экшн-камеры</h2>   
           </a>
         </div>
-        <div>
+        <div class="product-card-link-all">
           <a class="product-card-link" href="#">
             <img class="card" src="image\logo4.svg" width="107" height="65" alt="Фитнес-браслет">
             <h2 class="product">Фитнес-браслеты</h2>   
           </a>
         </div>
-        <div>
+        <div class="product-card-link-all">
           <a class="product-card-link" href="#">
             <img class="card" src="image\logo5.svg" width="56" height="98" alt="Часы">
             <h2 class="product">Умные часы</h2>  
           </a>
         </div>
-        <div>
+        <div class="product-card-link-all">
           <a class="product-card-link" href="#">
             <img class="card" src="image\logo6.svg" width="132" height="69" alt="Квадрокоптер">
             <h2 class="product">Квадрокоптеры</h2>  
