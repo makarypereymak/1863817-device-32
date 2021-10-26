@@ -36,294 +36,400 @@
 
   body {
     font-family: "Rubic", "Arial", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
+    color: #444444;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
   }
 
-  .main-container{
+  .main-container {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  }   
+
+  .logo {
+    position: absolute;
   }
 
-  header {
-    background-color: #FFE17F;
+  .navigation-link {
+    text-decoration: none;
     color: #000000;
   }
 
-  .navigation-link,
-  .warranty,
-  .credit,
-  .button,
-  .navigation-link-catalog,
-  .more-information {
+  .navigation-list-info {
+    display: flex;
     font-family: "Ralewey", "Arial", sans-serif;
-    font-style: normal;
     font-weight: 800; 
     line-height: 21px;
-    color: #000000;
-
+    margin-left: 60px;
+    margin-top: 29px;
+    padding: 0;
   }
 
-  .navigation-link-basket,
-  .navigation-link-compare,
-  .navigation-link-entrance,
-  .navigation-link-man,
-  .footer-adress,
-  .control-label,
-  .select-control,
-  .navigation-link-output{
-    font-family: "Rubik", "Arial", sans-serif;
-    font-style: normal;
+  .navigation-list-find {
+    margin-top: 49px;
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    margin-left: 60px;
   }
 
-.content-text,
-.contacts-phone {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #444444;
-}
-
-.data {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400l;
-  font-size: 16px;
-  line-height: 30px;
-  color: #444444;
-}
-
-.number {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 30px;
-  color: #000000;
-}
-
-.product {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;  
-}
-
-.warranty,
-.credit,
-.button {
-  text-align: center;   
-}
-
-.delivery {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center; 
-  color: #FFE17F;
-  background-color: #000000;  
+  .navigation-link {
+    text-decoration: none;
+    color: #000000;
   }
 
-.additionally-info-heading-more,
-.about-us-contacts,
-.message-info {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #444444;
+  .navigation-item-catalog {
+    margin-right: 304px;
   }
 
-.order {
-  background-color:#F0F0F0;
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;  
-  color: #000000;
-  text-transform: uppercase; 
+  .navigation-item-delivery {
+    margin-right: 19px;
   }
 
-.delivery-option {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-}
+  .navigation-item-warranty {
+    margin-right: 62px;
+  }
 
-.contacts-subtitle {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.page-footer {
-  color:#FFFFFF;
-  background-color:#444444;
-}
-
-.navigation-link-footer,
-.more-details {
+  .tagline {
   font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color:#FFFFFF;
-}
-
-.footer-contacts-address-phone {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: right;
-  color:#FFFFFF;
-}
-
-.contacts-phone {
-  text-decoration: underline;  
-}
-
-.tagline,
-.mailing-yes,
-.title-product,
-.additionally-info-heading,
-.contacts,
-.about-us {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
 }
 
-.sortig-product {
-  font-family: "Raleway", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-}
-
-.catalog-filter-title {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px; 
-}
-
-.catalog-filter-input {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
+.distance {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center; 
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
 }
 
-.product-card-price {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
+.feature {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content-text {
   font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.more-information {
+  font-family: "Ralewey", "Arial", sans-serif;
+  font-weight: 800; 
   line-height: 21px;
-  text-align: right;
+  color: #000000;
 }
 
-.product-card-title {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.pagination-show-more,
-.pagination-link {
-  font-family:"Raleway", "Arial", sans-serif;
-  font-style: normal;
+.product-card-link {
+  font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.breadcrumbs {
-  font-family: "Rubik", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.pagination,
-.sorting-block {
-  background-color: #EBEBEB;
-}
-
-.sorting {
-  background-color: #DCDCDC;
-}
-
-a {
+  font-size: 18px;
+  line-height: 24px;  
   text-decoration: none;
-  color:#000000;
-}
-.sorting-list {
-  background-color:#E5E5E5;
+  color: #000000;
 }
 
-.info,
-.block-info {
+.block-info{
   background-color: #F0F0F0;
 }
 
-.card {
-  background-color: #FFE17F;
+.button {
+  font-family: "Ralewey", "Arial", sans-serif;
+  font-weight: 800; 
+  line-height: 21px;
+  text-align: center;  
+  text-transform: uppercase; 
+  text-decoration: none;
+  color: #000000;
 }
 
-.navigation{
-  display: flex;
-  width: 1160px;  
+.delivery {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: center; 
+  color: #FFE17F;
+  background-color: #000000;  
+  text-align: center;  
+  text-transform: uppercase; 
+  text-decoration: none;
+  }
+
+  .additionally-info-heading {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+  }
+
+  .additionally-info-heading-more{
+   color:#444444;
+  }
+
+  .order {
+    background-color:#F0F0F0;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;  
+    color:#000000;
+    text-transform: uppercase; 
+    text-decoration: none;
+    }
+
+  .heading {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+  }
+
+  .delivery-option {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .contacts-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .contacts-phone{
+    text-decoration: none;
+    color: #444444;
+  }
+  
+  .info{
+    background: #F0F0F0;
+  }
+
+  .page-footer {
+    color:#FFFFFF;
+    background-color:#444444;
+  }
+
+  .footer-adress {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .navigation-link-footer {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#FFFFFF;
+  }
+
+  .footer-contacts-address-phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
+    color:#FFFFFF;
+    text-decoration: none;
+  }
+
+  .title-product {
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color:#000000;
+  }
+
+  .breadcrumbs {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .sorting-filter {
+    background-color: #DCDCDC;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .sorting-list {
+    background-color:#E5E5E5;
+  }
+
+  .catalog-filter-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px; 
+    color: #000000;
+  }
+
+  .catalog-filter-input {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center; 
+    color: #000000;
+  }
+
+  .control-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  .sorting-block {
+    background-color: #EBEBEB;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .product-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .product-card-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+  }
+
+  .pagination-show-more {
+    font-family:"Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .pagination-link {
+    font-family:"Raleway", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #444444;
+  }
+
+  .pagination {
+    background-color: #EBEBEB;
+  }
+
+  .pagination-next{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .pagination-prev{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE17F;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 40px;
+    width: 1160px;
+    height: 300px;
+  }
+
+  .product-card-list {
+    display: flex;
+    width: 1160px;
+    padding: 0;
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+
+  .product-card-item {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+  }
+
+  .about-us-contacts {
+    display: flex;
+  }
+
+  .page-footer {
+    justify-content: space-between;
+    display: flex;
 }
 
-.navigation-list-find{
-  margin-right:auto;
-}
-
-.header-catalog{
+.footer-info {
   display: flex;
   flex-direction: column;
 }
 
-.navigation-list-find{
-  margin-right:auto;
+.block-info {
+  display: flex;
 }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-product {
+  display: flex;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+

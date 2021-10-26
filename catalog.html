@@ -9,7 +9,7 @@
     <header class="page-header">
       <img class="logo" src="image\devace.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list-find">
           <li class="navigation-item">
             <form action="" method="get"><!--какую ссылку здесь указать-->
               <input type="submit">
@@ -17,23 +17,21 @@
             </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
+            <a class="navigation-link" href="#">Коля Петухов</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Выйти</a>  
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-man" href="#">Коля Петухов</a>
-          <li class="navigation-item">
-            <a class="navigation-link-output" href="#">Выйти</a>  
-          </li>
-        </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link-compare" href="#">Сравнить</a>
+            <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-basket" href="#">Корзина</a>
+            <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list-info">
+          <li class="navigation-item-catalog">
+            <a class="navigation-link" href="catalog">Каталог товаров</a>
+          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
           </li>
@@ -46,12 +44,12 @@
         </ul>
        </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog main-container">
       <section>
         <h1 class="title-product">
           Моноподы для селфи
         </h1>
-        <ul>
+        <ul class="breadcrumbs-list">
           <li>
             <a class="breadcrumbs" href="index.html">Главная</a>
           </li>
@@ -63,11 +61,12 @@
           </li>
         </ul>
       </section>
+      <div class="catalog-filter-product">
       <section class="catalog-products">
         <h2 class="visually-hidden"> 
           Фильтр товар электротехники
         </h2>
-        <span class="sorting">
+        <span class="sorting-filter">
           фильтр:
         </span>
         <div class="sorting-list">
@@ -88,9 +87,7 @@
             <label class="catalog-filter-label">
               до <input class="catalog-filter-input" type="number" name="max-price"> 5000
             </label>
-
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
@@ -131,7 +128,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Bluetooth</legend>
             <ul class="catalog-filter-list">
@@ -151,10 +147,11 @@
               </li>
             </ul>
           </fieldset>
-
           <button class="button" type="submit">Показать</button>
         </form>
         </div>
+      </section>
+        <div class="block-sorting-image">
         <div class="sorting-block">
           <form class="sorting-type">
             <label class="sorting-product" for="sorting">Сортировка</label>
@@ -174,7 +171,7 @@
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
-            <a class="more-details" href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
           </li>
           <li>
             <a class="product-card-link" href="product.html">
@@ -182,7 +179,7 @@
               <h3 class="product-card-title">Профессиональная селфи-палка </h3>
             </a>
             <b class="product-card-price">1 500 ₽</b>
-            <a class="visually-hidden more-details" href="#">Подробнее</a>
+            <a class="visually-hidden button" href="#">Подробнее</a>
           </li>
           <li>
             <a class="product-card-link" href="product.html">
@@ -192,7 +189,7 @@
                 селфи-палка</h3>
             </a>
             <b class="product-card-price">2 500 ₽</b>
-            <a class="visually-hidden more-details" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
+            <a class="visually-hidden button" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
           </li>
           <li>
             <a class="product-card-link" href="product.html">
@@ -200,7 +197,7 @@
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
             </a>
             <b class="product-card-price">4 900 ₽</b>
-            <a class="visually-hidden more-details" href="#">Подробнее</a>
+            <a class="visually-hidden button" href="#">Подробнее</a>
           </li>
         </ul>
         <button class="button pagination-show-more" type="button">Загрузить еще</button>
@@ -231,14 +228,15 @@
             </a>
           </li>
         </ul>
-      </section>
-
+      </div>
+    </div>
     </main>
     <footer class="page-footer">
       <p class="footer-adress">
           Санкт-Петербург, набережная 
 реки Карповки, 5, литера П.
       </p>
+      <div class="footer-info">
       <section>
         <ul class="navigation-list-footer">
           <li class="navigation-item">
@@ -271,6 +269,7 @@
           </li>
         </ul>
       </section> 
+    </div>
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </footer>
   </body>
