@@ -44,33 +44,47 @@
     </header>
     <main class="main-container main-index">
       <div class="text-slider">
-        <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
-        <div class="text-info"></div>
-          <p class="content-text">
-            <span class="tagline">
+        <div class="product-image-slider">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <img class="slider-image" src="image\slider-1.png" width="560" height="560" alt="Примеры работ" >
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
+        <div class="text-button-slider">
+          <div class="text-info">
+            <p class="content-text-main">
+              <span class="tagline">
               Порхает как бабочка,
 жалит как пчела!
-            </span> <br>Этот обычный, на первый взгляд, квадрокоптер оснащен 
+              </span> 
+              <span class="content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен 
 мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a class="more-information button" href="#">Подробнее</a>
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                 <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>  
+              </span>
+            </p>
+          </div>
+          <div class="button-more">
+            <a class="more-information button" href="#">Подробнее</a>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                   <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>  
           <ul>
             <li>
               <span class="distance"> 800 м </span>
@@ -82,52 +96,55 @@
             </li>
           </ul>>
         </div>
-        <div class="product-image-slider">
-          <img class="slider-image" src="image\slider-1.png" width="560" height="560" alt="Примеры работ" >
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-        </div>
       </div>
       <ul class="product-card-list">
         <li class="product-card-item">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="image\logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
+            <div class="product-card-box">
+              <img class="product-card-image" src="image\logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
+            </div>
             <h2 class="product-card-header">Виртуальная
               реальность</h2>
           </a>
         </li>
         <li class="product-card-item"> 
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="image\logo2.svg" width="85" height="117" alt="Монопод">
+            <div class="product-card-box">
+              <img class="product-card-image" src="image\logo2.svg" width="85" height="117" alt="Монопод">
+            </div>
             <h2 class="product-card-header">Моноподы 
               для селфи</h2>   
           </a>
         </li>
         <li class="product-card-item">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="image\logo3.svg" width="71" height="87" alt="Камера">
+            <div class="product-card-box">
+              <img class="product-card-image" src="image\logo3.svg" width="71" height="87" alt="Камера">
+            </div>
             <h2 class="product-card-header">Экшн-камеры</h2>   
           </a>
         </li>
         <li class="product-card-item">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="image\logo4.svg" width="107" height="65" alt="Фитнес-браслет">
+            <div class="product-card-box">
+              <img class="product-card-image" src="image\logo4.svg" width="107" height="65" alt="Фитнес-браслет">
+            </div>
             <h2 class="product-card-header">Фитнес-браслеты</h2>   
           </a>
         </li>
         <li class="product-card-item">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="image\logo5.svg" width="56" height="98" alt="Часы">
+            <div class="product-card-box">
+              <img class="product-card-image" src="image\logo5.svg" width="56" height="98" alt="Часы">
+            </div>
             <h2 class="product-card-header">Умные часы</h2>  
           </a>
         </li>
         <li class="product-card-item">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="image\logo6.svg" width="132" height="69" alt="Квадрокоптер">
+            <div class="product-card-box">
+              <img class="product-card-image" src="image\logo6.svg" width="132" height="69" alt="Квадрокоптер">
+            </div>
             <h2 class="product-card-header">Квадрокоптеры</h2>  
           </a>
         </li>
@@ -214,19 +231,23 @@
         </section>
     </div>
       <article class="info">
-        <h2 class="heading mailing-yes"> Подпишитесь на рассылку</h2>
-        <form action="" method="post"class="mail">
-          <input type="text" name="mail" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>    
-        </form>      
+        <div class="message-button-header">
+          <h2 class="heading mailing-yes"> Подпишитесь на рассылку</h2>
+          <form action="" method="post"class="mail">
+            <input type="text" name="mail" placeholder="Ваш e-mail">
+            <button class="button" type="submit">Подписаться</button>    
+          </form>      
+        </div>  
+        <div class="text-about-message">
         <p class="message-info">
       Еженедельный дайджест с обзорами новинок, 
 длительными тест-драйвами, распаковками, а также акции, 
 спецпредложения и вот это вот всё.
         </p>
-        <p class="message-info">
+        <span class="message-info">
       Это бесплатно
-        </p>
+        </span>
+      </div>
       </article>
     </main> 
     <footer class="page-footer">

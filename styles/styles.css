@@ -105,6 +105,8 @@
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  width: 560px;
+  height: 110px;
 }
 
 .distance {
@@ -124,6 +126,8 @@
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  width: 560px;
+  height: 80px;
 }
 
 .more-information {
@@ -387,7 +391,6 @@
   .product-card-item {
     width: 160px;
     height: 160px;
-    background-color: #FFE17F;
   }
 
   .about-us-contacts {
@@ -419,16 +422,53 @@
 
 .breadcrumbs-list {
   display: flex;
-  
+  }
+
+.content-text-main {
+  width: 560px;
+  height: 110px;
 }
 
+.text-slider {
+  display: flex;
+}
 
+.product-image-slider {
+  display: flex;
+  width: 560px;
+  height: 560px;
+}
 
+.text-button-slider {
+  display: flex;
+  flex-direction: column;
+}
 
+.button-more {
+  display: flex;
+}
 
+.slider-pagination {
+  display: flex;
+}
 
+.info {
+  display: flex;
+}
 
+.message-button-header {
+  display: flex;
+  flex-direction: column;
+}
 
+.text-about-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-box {
+  background-color: #FFE17F;
+}
 
 
 
