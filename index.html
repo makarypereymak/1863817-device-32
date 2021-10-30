@@ -43,7 +43,8 @@
        </nav>
     </header>
     <main class="main-container main-index">
-      <div class="text-slider">
+      <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
+      <div class="text-slider container">
         <div class="product-image-slider">
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущее фото</span>
@@ -55,7 +56,6 @@
         </div>
         <div class="text-button-slider">
           <div class="text-info">
-            <p class="content-text-main">
               <span class="tagline">
               Порхает как бабочка,
 жалит как пчела!
@@ -63,7 +63,6 @@
               <span class="content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен 
 мощным лазером, замаскированным под стандартную камеру.
               </span>
-            </p>
           </div>
           <div class="button-more">
             <a class="more-information button" href="#">Подробнее</a>
@@ -85,7 +84,7 @@
               </li>
             </ol>
           </div>  
-          <ul>
+          <ul class="options-product">
             <li>
               <span class="distance"> 800 м </span>
               <span class="feature"> Дальность полета </span>
@@ -101,7 +100,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image" src="image\logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
+              <img class="product-card-image-glasses" src="image\logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
             </div>
             <h2 class="product-card-header">Виртуальная
               реальность</h2>
@@ -110,7 +109,7 @@
         <li class="product-card-item"> 
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image" src="image\logo2.svg" width="85" height="117" alt="Монопод">
+              <img class="product-card-image-selfie" src="image\logo2.svg" width="85" height="117" alt="Монопод">
             </div>
             <h2 class="product-card-header">Моноподы 
               для селфи</h2>   
@@ -119,7 +118,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image" src="image\logo3.svg" width="71" height="87" alt="Камера">
+              <img class="product-card-image-camera" src="image\logo3.svg" width="71" height="87" alt="Камера">
             </div>
             <h2 class="product-card-header">Экшн-камеры</h2>   
           </a>
@@ -127,7 +126,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image" src="image\logo4.svg" width="107" height="65" alt="Фитнес-браслет">
+              <img class="product-card-image-fitness" src="image\logo4.svg" width="107" height="65" alt="Фитнес-браслет">
             </div>
             <h2 class="product-card-header">Фитнес-браслеты</h2>   
           </a>
@@ -135,7 +134,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image" src="image\logo5.svg" width="56" height="98" alt="Часы">
+              <img class="product-card-image-watch" src="image\logo5.svg" width="56" height="98" alt="Часы">
             </div>
             <h2 class="product-card-header">Умные часы</h2>  
           </a>
@@ -143,12 +142,13 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image" src="image\logo6.svg" width="132" height="69" alt="Квадрокоптер">
+              <img class="product-card-image-quadcopter" src="image\logo6.svg" width="132" height="69" alt="Квадрокоптер">
             </div>
             <h2 class="product-card-header">Квадрокоптеры</h2>  
           </a>
         </li>
       </ul>
+      <section class="block-info-list">
       <div class="block-info">
         <ul class="additionally-info">
           <li>
@@ -161,40 +161,31 @@
             <a class="credit button" href="#credit"> Кредит </a>
           </li>
         </ul>
-        <ul>
+        <ul class="additionally-info-text">
           <li id="delivery">
             <h2 class="additionally-info-heading"> Доставка </h2>
             <p class="additionally-info-heading-more">Мы с удовольствием доставим ваш товар прямо
 к вашему подъезду совершенно бесплатно! Ведь
 мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li id="warranty">
-            <h2 class="additionally-info-heading"> Гарантия </h2>
-            <p class="additionally-info-heading-more">Если из-за возгорания купленного у нас товара у вас
-сгорит дом — не переживайте, мы выдадим вам новый.
-Товар, не дом, конечно же.</p>
-          </li>
-          <li id="credit"> 
-            <h2 class="additionally-info-heading"> Кредит </h2>
-            <p>Если из-за возгорания купленного у нас товара у вас
-сгорит дом — не переживайте, мы выдадим вам новый.
-Товар, не дом, конечно же.</p>            
-          </li>
         </ul>
       </div>
-      <article>
-        <a class="order" href="#">Доставим редкий товар под заказ</a>
+      </section>  
+      <article class="rare-product-block">
+        <a class="order" href="#"> <span class="rare-product">Доставим редкий товар под заказ</span></a>
       </article>
       <div class="about-us-contacts">
         <section>
           <h2  class="heading about-us">
             О нас
           </h2>
-          <div>
-            Огромный выбор гаджетов не оставит равнодушным 
+          <div class="text-about-us">
+            <p>Огромный выбор гаджетов не оставит равнодушным 
 гика, который есть в каждом из нас. 
-            Мы можем доставить ваш товар в самые отдалённые 
+            </p>
+            <p>Мы можем доставить ваш товар в самые отдалённые 
 уголки России транспортными компаниями:
+            </p>
           </div>
           <ul class="delivery-option">
             <li>
@@ -209,18 +200,18 @@
           </ul>
           <a class="button" href="#">Подробнее о нас</a>
         </section>
-        <section>
+        <section class="all-contacts">
           <h2  class="heading contacts">
           Контакты
           </h2>
-          <p>
+          <p class="text-about-delivery">
           Вы можете забрать товар сами, заехав в наш офис. 
 Заодно, сможете проверить работоспособность покупки. 
           </p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a class="contacts-phone" href="tel:88005558628">8 800 555-86-28</a>
+            <a class="contacts-phone" href="tel:881281212128">+7 (812) 812-12-128</a>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
           <ul class="contacts-schedule">
@@ -244,7 +235,7 @@
 длительными тест-драйвами, распаковками, а также акции, 
 спецпредложения и вот это вот всё.
         </p>
-        <span class="message-info">
+        <span class="message-info-free">
       Это бесплатно
         </span>
       </div>
@@ -256,20 +247,17 @@
 реки Карповки, 5, литера П.
       </p>
       <div class="footer-info">
-      <section>
         <ul class="navigation-list-footer">
-          <li class="navigation-item">
+          <li class="navigation-item-footer">
             <a class="navigation-link-footer" href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-footer">
             <a class="navigation-link-footer" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-footer">
             <a class="navigation-link-footer" href="#">Контакты</a>
           </li>
         </ul>
-      </section> 
-      <section>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy">
@@ -287,9 +275,9 @@
             </a>
           </li>
         </ul>
-      </section> 
-    </div>
+      </div>
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </footer>
+    <script async src="//pixel-perfect.org/service/script.js?guid=16380dae898c8099848e1e2dbca1097a"></script>
   </body>
 </html>
