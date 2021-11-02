@@ -70,8 +70,10 @@
     line-height: 21px;
     margin-left: 60px;
     margin-top: 29px;
+    margin-right: 59px;
     padding: 0;
     list-style-type: none;
+    text-transform: uppercase;
   }
 
   .navigation-list-find {
@@ -91,10 +93,12 @@
 
   .navigation-item-catalog {
     margin-right: 304px;
+    width: 236px;
   }
 
   .navigation-item-delivery {
     margin-right: 19px;
+    
   }
 
   .navigation-item-warranty {
@@ -545,11 +549,28 @@
 }
 
 .options-product {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 160px 160px;
   list-style-type: none;
+}
+
+.distance-800 {
+  margin: 0;
+  grid-column: 1/2;
+}
+
+.feature-flight {
+  grid-row: 2/3;
 }
 
 .product-card-image-glasses {
   margin: 52px 32px;
+}
+
+.distance-50 {
+  margin: 0;
+  grid-column: 2/3;
 }
 
 .product-card-image-selfie {
@@ -675,5 +696,11 @@
 .message-info-free {
   margin-top: 63px;
   margin-bottom: 143px;
+  margin-left: auto;
+}
+
+.breadcrumbs-block {
+  width: 1160px;
+  margin-right: auto;
   margin-left: auto;
 }
