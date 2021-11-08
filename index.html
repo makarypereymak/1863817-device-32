@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
+      <nav class="navigation navigation-index">
         <img class="logo-header" src="image/logo-header.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
         <ul class="navigation-list-find">
           <li class="navigation-item-button">
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="navigation-find" action="https://echo.htmlacademy.ru" method="get">
               <input  class="search-button" value="" type="submit">
               <input class="search-field" type="text" name="find" placeholder="Поиск по сайту">
             </form>
@@ -35,16 +35,16 @@
         </ul>
         <ul class="navigation-list-info">
           <li class="navigation-item-catalog">
-            <a class="navigation-link" href="catalog">Каталог товаров</a>
+            <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
           </li>
           <li class="navigation-item-delivery">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link-delivery" href="#">Доставка</a>
           </li>
           <li class="navigation-item-warranty">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link-warranty" href="#">Гарантия</a>
           </li>
           <li class="navigation-item-contacts">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link-contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -63,6 +63,7 @@
         </div>
         <div class="text-button-slider">
           <div class="text-info">
+              <span class="number-product">01</span>
               <span class="tagline">
               Порхает как бабочка,
               жалит как пчела!
@@ -207,13 +208,13 @@
             </p>
           </div>
           <ul class="delivery-option">
-            <li>
+            <li class="delivery-option-item">
               Меловые линии
             </li>
-            <li>
+            <li class="delivery-option-item">
               СДИК
             </li>
-            <li>
+            <li class="delivery-option-item">
               ТоксБерри
             </li>
           </ul>

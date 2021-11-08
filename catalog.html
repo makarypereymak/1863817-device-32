@@ -11,7 +11,7 @@
         <img class="logo-header" src="image/logo-header.svg" width="145" height="36" alt="Логотип Интернет-магазина Девайс">
         <ul class="navigation-list-find">
           <li class="navigation-item-button">
-            <form action="" method="get"><!--какую ссылку здесь указать-->
+            <form class="navigation-find" action="" method="get"><!--какую ссылку здесь указать-->
               <input  class="search-button" value="" type="submit">
               <input class="search-field" type="text" name="find" placeholder="Поиск по сайту">
             </form>
@@ -36,16 +36,16 @@
         </ul>
         <ul class="navigation-list-info">
           <li class="navigation-item-catalog">
-            <a class="navigation-link" href="catalog">Каталог товаров</a>
+            <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
           </li>
           <li class="navigation-item-delivery">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link-delivery" href="#">Доставка</a>
           </li>
           <li class="navigation-item-warranty">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link-warranty" href="#">Гарантия</a>
           </li>
           <li class="navigation-item-contacts">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link-contacts" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -58,13 +58,13 @@
           </h1>
           <ul class="breadcrumbs-list">
             <li>
-              <a class="breadcrumbs" href="index.html">Главная</a>
+              <a class="breadcrumbs breadcrumbs-main" href="index.html">Главная</a>
             </li>
             <li>
-              <a class="breadcrumbs" href="#">Каталог товаров</a>
+              <a class="breadcrumbs breadcrumbs-catalog" href="#">Каталог товаров</a>
             </li>
             <li>
-              <a class="breadcrumbs">Моноподы для селфи</a>
+              <a class="breadcrumbs breadcrumbs-product">Моноподы для селфи</a>
             </li>
           </ul>
         </section>
@@ -174,58 +174,47 @@
          <!--тут должны быть две конпки есть по ним вопрос поэтому специально их пропустил -->
           <ul class="product-card-list-catalog">
             <li class="product-card-item-catalog">
-              <a class="product-card-link-image" href="product.html">
+              <a class="product-card-link-catalog" href="product.html">
                 <img class="product-card-image" src="image\catalog\product-1.png" width="360" height="380" alt="Любительская селфи-палка">
-              </a>
-              <a class="product-card-link-title" href="product.html">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
+                <b class="product-card-price">500 ₽</b>
+                <a class="button" href="#">Подробнее</a>
               </a>
-              <b class="product-card-price">500 ₽</b>
-              <a class="button" href="#">Подробнее</a>
             </li>
             <li class="product-card-item-catalog">
-              <a class="product-card-link-image" href="product.html">
-                <img class="product-card-image" src="image\catalog\product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-              </a>
-              <a class="product-card-link-title" href="product.html">
+              <a class="product-card-link-catalog" href="product.html">
+                <img class="product-card-image" src="image\catalog\product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">            
                 <h3 class="product-card-title">Профессиональная селфи-палка </h3>
-              </a>
-              <b class="product-card-price">1 500 ₽</b>
-              <a class="visually-hidden button" href="#">Подробнее</a>
+                <b class="product-card-price">1 500 ₽</b>
+                <a class="visually-hidden button" href="#">Подробнее</a>
             </li>
             <li class="product-card-item-catalog">
-              <a class="product-card-link-image" href="product.html">
+              <a class="product-card-link-catalog" href="product.html">
                 <img class="product-card-image" src="image\catalog\product-3.png" width="360" height="380" alt="Непотопляемая
-                селфи-палка">
-              </a>
-              <a class="product-card-link-title" href="product.html">           
+                селфи-палка">         
                 <h3 class="product-card-title">Непотопляемая
                   селфи-палка</h3>
-              </a>
-              <b class="product-card-price">2 500 &#8381;</b>
-              <a class="visually-hidden button" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
+                <b class="product-card-price">2 500 &#8381;</b>
+                <a class="visually-hidden button" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
             </li>
             <li class="product-card-item-catalog">
-              <a class="product-card-link-image" href="product.html">
+              <a class="product-card-link-catalog" href="product.html">
                 <img class="product-card-image" src="image\catalog\product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной">
-              </a>
-              <a class="product-card-link-title" href="product.html">
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-              </a>
-              <b class="product-card-price">4 900 	
-                &#8381;</b>
-              <a class="visually-hidden button" href="#">Подробнее</a>
+                <b class="product-card-price">4 900 	
+                  &#8381;</b>
+                <a class="visually-hidden button" href="#">Подробнее</a>
             </li>
           </ul>
           <button class="button pagination-show-more" type="button">Загрузить еще</button>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-prev pagination-disabled">
+              <a class="pagination-prev pagination-disabled" href="#">
                 <span>Назад</span>
               </a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current" href="#">1</a>
               <a class="pagination-link" href="#">2</a>
               <a class="pagination-link" href="#">3</a>
               <a class="pagination-link" href="#">...</a>
