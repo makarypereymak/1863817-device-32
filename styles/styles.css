@@ -1912,8 +1912,8 @@ body {
   background: #000000;
   box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
-  position: absolute;
-  top: 13px;
+  position: absolute; /*не работает+треугольник сверхну делать через бифор ротэейт и позишн?*/
+  top: 33px;
   right: 0;
   z-index: 1;
   box-sizing: border-box;
@@ -1935,10 +1935,17 @@ body {
 }
 
 .product-basket-list {
+  margin-top: 20px;
+  padding: 0;
   list-style-type: none;
 }
 
 .product-link-in-basket {
+  margin-right: 25px;
+  margin-left: 23px;
+  width: 180px;
+  min-height: 43px;
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -1974,4 +1981,28 @@ body {
 .popover-text-info span {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.popover-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  margin-bottom: 41px;
+}
+
+.product-basket-list:last-child {
+  margin-bottom: none;
+} /* почему не работает*/
+
+.button-delete-product {
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  background-color: #000000;
+  border: none;
+}
+
+.icon-in-popover {
+  position: absolute;
+  top: 7px;
 }
