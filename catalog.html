@@ -17,7 +17,7 @@
             </form>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-name" href="#">Коля Петухов
+            <a class="navigation-link-name navigation-link" href="#">Коля Петухов
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#000"/></svg>
             </a>
             <a class="navigation-link-exit" href="#">Выйти</a>  
@@ -175,35 +175,38 @@
           <ul class="product-card-list-catalog">
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
-                <img class="product-card-image" src="image\catalog\product-1.png" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="product-card-image" src="image/catalog/product-1.png" width="360" height="380" alt="Любительская селфи-палка">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                 <b class="product-card-price">500 ₽</b>
-                <a class="button" href="#">Подробнее</a>
               </a>
+              <a class="button-show-more" href="#">Подробнее</a><!--сделать спан-->
             </li>
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
-                <img class="product-card-image" src="image\catalog\product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">            
+                <img class="product-card-image" src="image/catalog/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">            
                 <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                 <b class="product-card-price">1 500 ₽</b>
-                <a class="visually-hidden button" href="#">Подробнее</a>
+              </a>  
+                <a class="visually-hidden button-show-more" href="#">Подробнее</a>
             </li>
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
-                <img class="product-card-image" src="image\catalog\product-3.png" width="360" height="380" alt="Непотопляемая
+                <img class="product-card-image" src="image/catalog/product-3.png" width="360" height="380" alt="Непотопляемая
                 селфи-палка">         
                 <h3 class="product-card-title">Непотопляемая
                   селфи-палка</h3>
                 <b class="product-card-price">2 500 &#8381;</b>
-                <a class="visually-hidden button" href="#">Подробнее</a> <!--visually-hidden почему-то не скрывает эти надписи, почему понять не могу -->
+              </a> 
+                <a class="visually-hidden button-show-more" href="#">Подробнее</a> 
             </li>
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
-                <img class="product-card-image" src="image\catalog\product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной">
+                <img class="product-card-image" src="image/catalog/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной">
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                 <b class="product-card-price">4 900 	
                   &#8381;</b>
-                <a class="visually-hidden button" href="#">Подробнее</a>
+              </a>    
+                <a class="visually-hidden button-show-more" href="#">Подробнее</a>
             </li>
           </ul>
           <button class="button pagination-show-more" type="button">Загрузить еще</button>
@@ -231,7 +234,7 @@
     </main>
     <footer class="page-footer">
       <div class="wraper">
-        <img class="devace-footer" src="image\devace-footer-2.svg" width="145" height="36" alt="Логотип Интернет-магазина devace">
+        <img class="devace-footer" src="image/devace-footer-2.svg" width="145" height="36" alt="Логотип Интернет-магазина devace">
         <p class="footer-adress">
           Санкт-Петербург, набережная 
 реки Карповки, 5, литера П.
@@ -251,16 +254,22 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-fc button" href="https://www.facebook.com/htmlacademy">
+                <svg class="social-icon-fc" aria-hidden="true" focusable="false" width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z"/></svg>
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-inst button" href="https://www.instagram.com/htmlacademy/">
+                <svg class="social-icon-inst" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="#444444"/>
+                  <path d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z"/>
+                  </svg>                  
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-tw button" href="https://twitter.com/htmlacademy_ru">
+                <svg class="social-icon-tw" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.7.1c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.6 0 12.2c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.7.3 7 .4 5c.3.3.9.5 1.2.4C1 5.2-.2 2.3.8.8c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/></svg>  
                 <span class="visually-hidden">Твитер</span>
               </a>
             </li>

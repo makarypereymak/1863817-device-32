@@ -31,11 +31,47 @@
               <span class="number"> 2 </span>
               <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>
      Корзина</a>
+            <div class="popover popover-cart">
+              <button class="popover-close-button button button-light">
+                2
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title visually-hidden">Корзина</h2>
+                <ul class="product-basket-list">
+                  <li>
+                    <img class="product-card-image-in-basket" src="" width="" height="" alt="Логотип селфи-палки">
+                    <a class="product-link-in-basket" href="#">Любительская селфи-палка</a>
+                    <button class="button-delete-product">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                  <li>
+                    <img class="product-card-image-in-basket" src="" width="" height="" alt="Логотип профессиональной селфи-палки">
+                    <a class="product-link-in-basket" href="#">Профессиональная
+                      селфи-палка</a>
+                    <button class="button-delete-product">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-text-info">
+                  <span>
+                    Товаров: 2
+                  </span>
+                  <span>
+                    Сумма: 2000 ₽
+                  </span>
+                </div>  
+                <a class="open-basket-link" href="#"><span>Открыть корзину</span></a>
+              </div>
+            </div>
           </li>
         </ul>
         <ul class="navigation-list-info">
           <li class="navigation-item-catalog">
             <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
+            <span>+</span>
           </li>
           <li class="navigation-item-delivery">
             <a class="navigation-link-delivery" href="#">Доставка</a>
@@ -53,14 +89,18 @@
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <div class="text-slider container">
         <div class="product-image-slider">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <img class="slider-image" src="image\slider-1.png" width="560" height="560" alt="Примеры работ" >
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
-        </div>
+          <div class="slider-wraper">
+            <div class="slider-control">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>  
+            <img class="slider-image" src="image/slider-1.png" width="560" height="560" alt="Примеры работ" >
+          </div>
+          </div>
         <div class="text-button-slider">
           <div class="text-info">
               <span class="number-product">01</span>
@@ -95,10 +135,10 @@
             </ol>
           </div>  
           <dl class="options-product">
-            <dd class="distance distance-800"> 800 м </dd>
-            <dt class="feature-flight"> Дальность полета </dt>
-            <dd class="distance distance-50"> 50 м </dd>
-            <dt class="feature"> Радиус поражения </dt>   
+            <dt class="distance distance-800"> 800 м </dt>
+            <dd class="feature-flight"> Дальность полета </dd>
+            <dt class="distance distance-50"> 50 м </dt>
+            <dd class="feature"> Радиус поражения </dd>   
           </dl>>
         </div>
       </div>
@@ -106,7 +146,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image-glasses" src="image\logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
+              <img class="product-card-image-glasses" src="image/logo1.svg" width="96" height="54" alt="Очки виртуальной реальности">
             </div>
             <h2 class="product-card-header">Виртуальная
               реальность</h2>
@@ -115,7 +155,7 @@
         <li class="product-card-item"> 
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image-selfie" src="image\logo2.svg" width="85" height="117" alt="Монопод">
+              <img class="product-card-image-selfie" src="image/logo2.svg" width="85" height="117" alt="Монопод">
             </div>
             <h2 class="product-card-header">Моноподы 
               для селфи</h2>   
@@ -124,7 +164,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image-camera" src="image\logo3.svg" width="71" height="87" alt="Камера">
+              <img class="product-card-image-camera" src="image/logo3.svg" width="71" height="87" alt="Камера">
             </div>
             <h2 class="product-card-header">Экшн-камеры</h2>   
           </a>
@@ -132,7 +172,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image-fitness" src="image\logo4.svg" width="107" height="65" alt="Фитнес-браслет">
+              <img class="product-card-image-fitness" src="image/logo4.svg" width="107" height="65" alt="Фитнес-браслет">
             </div>
             <h2 class="product-card-header">Фитнес-браслеты</h2>   
           </a>
@@ -140,7 +180,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image-watch" src="image\logo5.svg" width="56" height="98" alt="Часы">
+              <img class="product-card-image-watch" src="image/logo5.svg" width="56" height="98" alt="Часы">
             </div>
             <h2 class="product-card-header">Умные часы</h2>  
           </a>
@@ -148,7 +188,7 @@
         <li class="product-card-item">
           <a class="product-card-link" href="#">
             <div class="product-card-box">
-              <img class="product-card-image-quadcopter" src="image\logo6.svg" width="132" height="69" alt="Квадрокоптер">
+              <img class="product-card-image-quadcopter" src="image/logo6.svg" width="132" height="69" alt="Квадрокоптер">
             </div>
             <h2 class="product-card-header">Квадрокоптеры</h2>  
           </a>
@@ -242,28 +282,30 @@
         </section>
       </div>
       <article class="info">
-        <div class="message-button-header">
-          <h2 class="heading mailing-yes"> Подпишитесь на рассылку</h2>
-          <form action="" method="post"class="mail">
-            <input type="text" name="mail" placeholder="Ваш e-mail">
-            <button class="button" type="submit">Подписаться</button>    
-          </form>      
-        </div>  
-        <div class="text-about-message">
-          <p class="message-info">
-            Еженедельный дайджест с обзорами новинок, 
-            длительными тест-драйвами, распаковками, а также акции, 
-            спецпредложения и вот это вот всё.
-          </p>
-          <span class="message-info-free">
-            Это бесплатно
-          </span>
+        <div class="wraper-for-mail">
+          <div class="message-button-header">
+            <h2 class="heading mailing-yes"> Подпишитесь на рассылку</h2>
+            <p class="message-info">
+              Еженедельный дайджест с обзорами новинок, 
+              длительными тест-драйвами, распаковками, а также акции, 
+              спецпредложения и вот это вот всё.
+            </p>   
+          </div>  
+          <div class="text-about-message">
+            <form action="" method="post" class="mail-form">
+              <input class="mail-input" type="text" name="mail" placeholder="Ваш e-mail">
+              <button class="button mail" type="submit">Подписаться</button>    
+            </form> 
+            <span class="message-info-free">
+              Это бесплатно
+            </span>
+          </div>
         </div>
       </article>
     </main> 
     <footer class="page-footer">
       <div class="wraper">
-        <img class="devace-footer" src="image\devace-footer-2.svg" width="145" height="36" alt="Логотип Интернет-магазина devace">
+        <img class="devace-footer" src="image/devace-footer-2.svg" width="145" height="36" alt="Логотип Интернет-магазина devace">
         <p class="footer-adress">
           Санкт-Петербург, набережная 
 реки Карповки, 5, литера П.
@@ -283,16 +325,22 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-fc button" href="https://www.facebook.com/htmlacademy">
+                <svg class="social-icon-fc" aria-hidden="true" focusable="false" width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z"/></svg>
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-inst button" href="https://www.instagram.com/htmlacademy/">
+                <svg class="social-icon-inst" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="#444444"/>
+                  <path d="M14.7 1.3C13.8 0.4 12.7 0 11.3 0H4.7C1.9 0 0 1.9 0 4.7V11.3C0 12.7 0.4 13.9 1.4 14.7C2.3 15.6 3.4 16 4.7 16H11.3C12.7 16 13.9 15.6 14.7 14.7C15.5 13.8 16 12.7 16 11.3V4.7C16 3.3 15.6 2.1 14.7 1.3ZM8 12.1C5.8 12.1 3.9 10.3 3.9 8C3.9 5.7 5.8 3.9 8 3.9C10.2 3.9 12.1 5.7 12.1 8C12.1 10.3 10.2 12.1 8 12.1ZM12.6 4.7C11.9 4.7 11.3 4.2 11.3 3.4C11.3 2.6 11.8 2.1 12.6 2.1C13.3 2.1 13.9 2.7 13.9 3.4C13.9 4.1 13.3 4.7 12.6 4.7Z"/>
+                  </svg>                  
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link footer-social-tw button" href="https://twitter.com/htmlacademy_ru">
+                <svg class="social-icon-tw" aria-hidden="true" focusable="false" width="15" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.7.1c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.6 0 12.2c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.7.3 7 .4 5c.3.3.9.5 1.2.4C1 5.2-.2 2.3.8.8c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/></svg>  
                 <span class="visually-hidden">Твитер</span>
               </a>
             </li>
@@ -304,5 +352,36 @@
         </div> 
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="auth-name">Ваше имя:</label>
+              <input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Имя Фамилия">
+            </p>
+            <p class="field-group">
+              <label for="auth-mail">Ваш e-mail:</label>
+              <input class="auth-form-field field" type="text" id="auth-mail" name="auth-mail" placeholder="krasotka92@mail.ru">
+            </p>
+            <p class="field-group">
+              <label for="auth-product">Что нужно привезти:</label>
+              <input class="auth-form-field field" type="text" id="auth-product" name="auth-product" placeholder="В свободной форме">
+            </p>
+            <p class="field-group">
+              <label for="auth-numbert">Количество:</label>
+              <input class="auth-form-field field" type="number" id="auth-number" name="auth-number" placeholder="1">
+            </p>
+          </form>
+          <button class="button-send" href="#">
+            <span class="text-send"> Отправить </span>            
+          </button>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
