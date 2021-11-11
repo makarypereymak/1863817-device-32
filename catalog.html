@@ -83,18 +83,26 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-              <label class="catalog-filter-label"> от
-                <input class="catalog-filter-input" type="number" name="min-price"> 0
-              </label>
-              <label class="catalog-filter-label"> до
-                <input class="catalog-filter-input" type="number" name="max-price"> 5000
-              </label>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 42px; width: 136px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от <input class="range-input" type="number" value="0" name="min-price"> 
+                  </label>
+                  <label class="catalog-filter-label">
+                    до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px"> 
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
@@ -142,20 +150,22 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark-yes"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-no"></span>
                     <span class="control-label">Нет</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button-in-filter" type="submit">
+              <span>Показать</span>
+            </button>
             </form>
           </div>
         </section>
@@ -178,16 +188,16 @@
                 <img class="product-card-image" src="image/catalog/product-1.png" width="360" height="380" alt="Любительская селфи-палка">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
                 <b class="product-card-price">500 ₽</b>
+                <span class="button-show-more">Подробнее</span>
               </a>
-              <a class="button-show-more" href="#">Подробнее</a><!--сделать спан-->
             </li>
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
                 <img class="product-card-image" src="image/catalog/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">            
                 <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                 <b class="product-card-price">1 500 ₽</b>
+                <span class="button-show-more">Подробнее</span>
               </a>  
-                <a class="visually-hidden button-show-more" href="#">Подробнее</a>
             </li>
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
@@ -196,8 +206,8 @@
                 <h3 class="product-card-title">Непотопляемая
                   селфи-палка</h3>
                 <b class="product-card-price">2 500 &#8381;</b>
+                <span class="button-show-more">Подробнее</span>
               </a> 
-                <a class="visually-hidden button-show-more" href="#">Подробнее</a> 
             </li>
             <li class="product-card-item-catalog">
               <a class="product-card-link-catalog" href="product.html">
@@ -205,8 +215,8 @@
                 <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                 <b class="product-card-price">4 900 	
                   &#8381;</b>
-              </a>    
-                <a class="visually-hidden button-show-more" href="#">Подробнее</a>
+                <span class="button-show-more">Подробнее</span>  
+              </a> 
             </li>
           </ul>
           <button class="button pagination-show-more" type="button">Загрузить еще</button>

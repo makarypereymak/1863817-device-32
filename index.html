@@ -36,8 +36,10 @@
                 <h2 class="popover-title visually-hidden">Корзина</h2>
                 <ul class="product-basket-list">
                   <li class="popover-item">
-                    <img class="product-card-image-in-basket" src="image/product-1-small.jpg" width="41" height="43" alt="Логотип селфи-палки">
-                    <a class="product-link-in-basket" href="#">Любительская селфи-палка</a>
+                    <a class="product-link-in-basket" href="#">
+                      <img class="product-card-image-in-basket" src="image/product-1-small.jpg" width="41" height="43" alt="Логотип селфи-палки">
+                      <span>Любительская Селфи-палка</span>
+                    </a>
                     <button class="button-delete-product">
                       <svg class="icon-in-popover" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
@@ -46,9 +48,11 @@
                     </button>
                   </li>
                   <li class="popover-item">
-                    <img class="product-card-image-in-basket" src="image/product-2-small.jpg" width="41" height="43" alt="Логотип профессиональной селфи-палки">
-                    <a class="product-link-in-basket" href="#">Профессиональная
-                      селфи-палка</a>
+                    <a class="product-link-in-basket" href="#">
+                      <img class="product-card-image-in-basket" src="image/product-2-small.jpg" width="41" height="43" alt="Логотип профессиональной селфи-палки">
+                      <span>Профессиональная
+                        селфи-палка</span>
+                    </a>
                     <button class="button-delete-product">
                       <svg class="icon-in-popover" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"/>
@@ -72,8 +76,29 @@
         </ul>
         <ul class="navigation-list-info">
           <li class="navigation-item-catalog">
-            <a class="navigation-link-catalog" href="catalog">Каталог товаров</a>
-            <span>+</span>
+            <a class="navigation-link-catalog" href="catalog">Каталог товаров
+              <ul class="header-catalog-list">
+                <li>
+                  <a class="product-header-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a class="product-header-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="product-header-link" href="#">Экшн-камеры</a>
+                </li>
+                <li>
+                  <a class="product-header-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="product-header-link" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="product-header-link" href="#">Квадрокоптеры</a>
+                </li>  
+              </ul>
+            </a>
+            <button class="button-catalog"><span class="visually-hidden">+</span></button>
           </li>
           <li class="navigation-item-delivery">
             <a class="navigation-link-delivery" href="#">Доставка</a>
@@ -90,7 +115,7 @@
     <main class="main-container main-index">
       <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
       <div class="text-slider container">
-        <div class="product-image-slider">
+        <div class="product-image-slider-first-quadcopter">
           <div class="slider-wraper">
             <div class="slider-control">
               <button class="slider-button slider-prev" type="button">
@@ -103,7 +128,7 @@
             <img class="slider-image" src="image/slider-1.png" width="560" height="560" alt="Примеры работ" >
           </div>
           </div>
-        <div class="text-button-slider">
+        <div class="text-button-slider-first-quadcopter">
           <div class="text-info">
               <span class="number-product">01</span>
               <span class="tagline">
@@ -141,6 +166,110 @@
             <dd class="feature-flight"> Дальность полета </dd>
             <dt class="distance distance-50"> 50 м </dt>
             <dd class="feature"> Радиус поражения </dd>   
+          </dl>>
+        </div>
+        <div class="product-image-slider-second-fitness">
+          <div class="slider-wraper">
+            <div class="slider-control">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>  
+            <img class="slider-image" src="image/slider-2.png" width="560" height="560" alt="Примеры работ" >
+          </div>
+        </div>
+        <div class="text-button-slider-second-fitness">
+          <div class="text-info">
+              <span class="number-product">02</span>
+              <span class="tagline">
+                Худеем
+                правильно!
+              </span> 
+              <span class="content-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+              </span>
+          </div>
+          <div class="button-more">
+            <a class="more-information button" href="#">
+              <span class="more-information-text"> Подробнее </span>            
+            </a>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                   <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>  
+          <dl class="options-product">
+            <dt class="distance distance-800"> 48 часов</dt>
+            <dd class="feature-flight"> Без подзарядки </dd>
+          </dl>>
+        </div>
+        <div class="product-image-slider-third-selfie">
+          <div class="slider-wraper">
+            <div class="slider-control">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>  
+            <img class="slider-image" src="image/slider-3.png" width="560" height="560" alt="Примеры работ" >
+          </div>
+          </div>
+        <div class="text-button-slider-third-selfie">
+          <div class="text-info">
+              <span class="number-product">03</span>
+              <span class="tagline">
+                Делай селфи,
+                как Бен Стиллер! 
+              </span> 
+              <span class="content-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+              </span>
+          </div>
+          <div class="button-more">
+            <a class="more-information button" href="#">
+              <span class="more-information-text"> Подробнее </span>            
+            </a>
+            <ol class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                   <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>  
+          <dl class="options-product-third">
+            <dt class="distance distance-8-5"> 8,5 м </dt>
+            <dd class="stick-length"> Длина палки </dd>
+            <dt class="distance heft-5"> 5 кг </dt>
+            <dd class="feature heft"> Вес палки </dd>
+            <dt class="distance carbon"> Карбон </dt>
+            <dd class="feature material"> Материал </dd>    
           </dl>>
         </div>
       </div>
@@ -357,27 +486,52 @@
     <div class="modal-container">
       <div class="modal modal-auth">
         <button class="modal-close-button">
+          <svg class="icon-in-modal" width="26" height="26" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="black"/>
+          </svg>   
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label for="auth-name">Ваше имя:</label>
-              <input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Имя Фамилия">
-            </p>
-            <p class="field-group">
-              <label for="auth-mail">Ваш e-mail:</label>
-              <input class="auth-form-field field" type="text" id="auth-mail" name="auth-mail" placeholder="krasotka92@mail.ru">
-            </p>
-            <p class="field-group">
-              <label for="auth-product">Что нужно привезти:</label>
-              <input class="auth-form-field field" type="text" id="auth-product" name="auth-product" placeholder="В свободной форме">
-            </p>
-            <p class="field-group">
-              <label for="auth-numbert">Количество:</label>
-              <input class="auth-form-field field" type="number" id="auth-number" name="auth-number" placeholder="1">
-            </p>
+            <div class="name-mail-block">
+              <p class="field-group">
+                <label class="modal-label" for="auth-name">Ваше имя:</label>
+                <input class="auth-form-field field-for-name" type="text" id="auth-name" name="auth-name" placeholder="Имя Фамилия">
+                <span>Пожалуйста, представьтесь</span>
+                <svg class="name-icon" aria-hidden="true" focusable="false" width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" fill="#B3B3B3"/></svg>
+              </p>
+              <p class="field-group">
+                <label class="modal-label" for="auth-maill">Ваш e-mail:</label>
+                <input class="auth-form-field field-for-email" type="text" id="auth-mail" name="auth-mail" placeholder="krasotka92@mail.ru">
+                <span>Забавный у вас адрес</span>
+                <svg class="modal-email-icon" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z" fill="#B3B3B3"/>
+                  </svg>
+              </p>
+            </div> 
+            <div class="number-product-block">
+              <p class="field-group">
+                <label class="modal-label" for="auth-product">Что нужно привезти:</label>
+                <input class="auth-form-field field-for-product" type="text" id="auth-product" name="auth-product" placeholder="В свободной форме">
+              </p>
+              <p class="field-group">
+                <label class="modal-label" for="auth-number">Количество:</label>
+                <span class="button-input-number">
+                  <button class="bt-minus"></button>
+                  <input class="auth-form-field field-for-number" type="number" id="auth-number" name="auth-number" placeholder="1">
+                  <button class="bt-plus"></button>
+                </span>    
+              </p>
+              <div class="background-icon-modal">
+                <svg class="contacts-modal-icon" aria-hidden="true" focusable="false" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="1">
+                  <path d="M2 0H0V2H2V0Z" fill="black"/>
+                  <path d="M2 4H0V12H2V4Z" fill="black"/>
+                  </g>
+                </svg>  
+              </div>
+            </div>
           </form>
           <button class="button-send" href="#">
             <span class="text-send"> Отправить </span>            
