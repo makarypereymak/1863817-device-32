@@ -101,7 +101,7 @@ body {
   fill:#000000
 }
 
-.devace-footer {
+.device-footer {
   top: 62px;
   position: absolute;
 }
@@ -179,6 +179,7 @@ body {
 }
 
 .navigation-item-catalog {
+  position: relative;
   width: 540px;
 }
 
@@ -221,9 +222,6 @@ body {
 .content-text {
   margin-top: 19px;
   display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   color: #444444;
   width: 560px;
   height: 80px;
@@ -493,6 +491,7 @@ body {
   color: black;
   border: none;
   background: #EBEBEB;
+  margin-left: 51px;
 }
 
 .catalog-filter {
@@ -635,12 +634,13 @@ b {
 .product-card-header {
   font-family:"Raleway", "Arial", sans-serif;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: left;
-  text-transform: capitalize;
+  text-transform: initial;
   color: #000000;
   margin-top: 33px;
+  letter-spacing: -0.02em;
 }
 
 .product-card-link {
@@ -862,6 +862,8 @@ b {
 }
 
 .text-slider {
+  margin-bottom: 70px;
+  max-height: 560px;
   max-width: 1160px;
   display: flex;
 }
@@ -1003,7 +1005,7 @@ b {
 }
 
 .icon-man-delivery {
-  left: 531px;
+  left: 555px;
   top: 15px;
   position: absolute;
 }
@@ -1603,9 +1605,7 @@ b {
 }
 
 .navigation-link:focus {
-  outline: none;
-  border: 2px solid #AF4FFF;
-  box-sizing: border-box;
+  outline: 2px solid #AF4FFF;
   border-radius: 20px;
 }
 
@@ -1749,11 +1749,96 @@ b {
 }
 
 .header-catalog-list {
+  left: -60px;
+  background: #FFE17F;
+  position: absolute;
+  letter-spacing: 0;
+  min-width: 640px;
+  text-transform: initial;
+  padding: 0;
+  list-style-type: none;
+  font-family: "Rubic", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   display: none;
+  text-decoration: none;
+  width: 1160px;
+  height: 180px;
+  z-index: 3;
 }
 
-.navigation-link-catalog:hover .header-catalog-list {
-  display: inline-block;
+.product-header-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-item-catalog:hover .header-catalog-list {
+  display: flex;
+}
+
+.navigation-item-catalog .button-catalog::after {
+  content: none;
+}
+
+.navigation-item-catalog:hover .button-catalog {
+  opacity: 1;
+}
+
+.navigation-link-catalog:focus {
+  outline: none;
+}
+
+.navigation-item-catalog:focus .navigation-link-catalog {
+  outline: 2px solid #AF4FFF;
+  border-radius: 15px;
+}
+
+.navigation-item-catalog:active .navigation-item-catalog {
+  outline: none;
+}
+
+.navigation-item-catalog:active .navigation-link-catalog{
+  opacity: 0.2;
+}
+
+.navigation-item-catalog:active .button-catalog {
+  opacity: 0.2;
+}
+
+.header-catalog-item {
+  margin-top: 35px;
+}
+
+.header-catalog-item:first-child {
+  margin-left: 60px;
+  margin-right: 29px;
+  width: 210px;
+  height: 120px;
+}
+
+.header-catalog-item:nth-child(2) {
+  width: 200px;
+  height: 120px;
+}
+
+.header-catalog-item:last-child {
+  width: 200px;
+  height: 120px;
+}
+
+.header-catalog-list-in-item {
+  padding: 0;
+  list-style-type: none;
+}
+
+.header-catalog-item-in-list {
+  margin-top: 20px;
+}
+
+.header-catalog-item-in-list:first-child {
+  margin-top: 0;
 }
 
 .mail-input {
@@ -1768,7 +1853,6 @@ b {
   border-top: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
   width: 601px;
-  opacity: 0.5;
   border-right: none;
 }
 
@@ -1782,17 +1866,54 @@ b {
   padding-bottom: 18px;
 }
 
+.button.mail:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: #000000;
+}
+
+.button.mail:focus {
+  border: 3px solid #AF4FFF;
+  outline: none;
+}
+
+.button.mail:active {
+  color: #FFFFFF;
+  background-color: #000000;
+  border: #000000;
+  opacity: 0.3;
+}
+
 .message-button-header {
   display: flex;
   flex-direction: row;
   max-width: 1160px;
   margin-right: 40px;
 }
+
 .mail-form {
   margin-bottom: 131px;
   height: 55px;
   display: flex;
   width: 861px;
+}
+
+.mail-input:hover {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.mail-input:focus {
+  background: #DCDCDC;
+  outline: none;
+}
+
+.mail-input:active {
+  border-bottom: 3px solid rgba(0, 0, 0, 1);
+  background: #F0F0F0;
+}
+
+.mail-input:disabled {
+  border-bottom: 3px solid #FF3D3D;
 }
 
 .wrapper-for-mail {
@@ -1998,19 +2119,23 @@ b {
 
 .slider-next {
   transform: rotate(180deg);
+  margin-right: 19px;
 }
 
 .slider-wrapper {
   position: relative;
 }
 
+.slider-prev {
+  margin-left: 19px;
+}
+
 .slider-control {
   position: absolute;
-  top: 50%;
+  top: 250px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  transform: translateY(-50%);
 }
 
 .slider-button:hover {
@@ -2260,6 +2385,8 @@ b {
 }
 
 .field-group {
+  padding: 0;
+  border: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2272,10 +2399,12 @@ b {
 }
 
 .name-mail-block {
+  margin-bottom: 10px;
   display: flex;
 }
 
 .number-product-block {
+  margin-bottom: 54px;
   position: relative;
   display: flex;
 }
@@ -2302,6 +2431,7 @@ b {
 }
 
 .button-catalog {
+  cursor: pointer;
   width: 50px;
   height: 50px;
   position: relative;
@@ -2439,12 +2569,44 @@ b {
   width: 26px;
   height: 26px;
   background-color: #FFE17F;
-  top: 16px;
+  top: -2px;
   right: 14px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.background-icon-modal:hover .icon-show-more {
+  display: block;
+}
+
+.icon-show-more {
+  font-size: 16px;
+  min-width: 164px;
+  min-height: 141px;
+  position: absolute;
+  display: none;
+  color: #FFFFFF;
+  padding-left: 19px;   
+  padding-top: 19px;
+  padding-right: 17px;
+  background: #000000;
+  box-shadow: 0px 10px 0px rgb(0 0 0 / 10%);
+  line-height: 20px;
+  top: 36px;
+  right: -50px;
+}
+
+.icon-show-more::before {
+  right: 63px;
+  top: -6px;
+  position: absolute;
+  width: 12px;
+  content: "";
+  height: 28px;
+  transform: rotate(45deg);
+  background-color: black;
 }
 
 .modal-email-icon {
@@ -2533,17 +2695,43 @@ input[type="number"]::-webkit-inner-spin-button {
   outline: 5px solid #AF4FFF;
 }
 
+.bt-minus:hover .bt-minus::after {
+  opacity: 1;
+}
+
+.bt-plus:hover .bt-plus::after {
+  opacity: 1;
+}
+
+.bt-plus:hover .bt-plus::before {
+  opacity: 1;
+}
+
+.bt-minus:focus {
+  outline: none;
+}
+
+.bt-plus:focus {
+  outline: none;
+}
+
+.bt-minus:focus + .bt-minus::after {
+  outline: 2px solid #AF4FFF;
+}
+
+.bt-plus:focus .bt-plus::after {
+  outline: 2px solid #AF4FFF;
+}
+
 .auth-form-field:active {
   outline: none;
   background: #FFFFFF;
-  border: 3px solid #000000;
-  box-sizing: border-box;
+  outline: 3px solid #000000;
 }
 
 .auth-form-field:disabled {
   background: #FFFFFF;
-  border: 3px solid #FF3D3D;
-  box-sizing: border-box;
+  outline: 3px solid #FF3D3D;
 }
 
 .field-for-number:hover .bt-minus {
@@ -2552,24 +2740,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .field-for-number:hover .bt-plus {
   background: #EBEBEB;
-}
-
-.button-input-number:focus-within {
-  outline: 5px solid #AF4FFF;
-}
-
-.field-for-number:disabled .bt-minus {
-  background: #FFFFFF;
-  border: 3px solid #FF3D3D;
-  box-sizing: border-box;
-  border-right: none;
-}
-
-.field-for-number:disabled .bt-plus {
-  background: #FFFFFF;
-  border: 3px solid #FF3D3D;
-  box-sizing: border-box;
-  border-left: none;
 }
 
 .range-scale {
@@ -2607,16 +2777,16 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 2px solid #AF4FFF;
   box-sizing: border-box;
 }
-/*
-.range-toggle.toggle-min:focus .catalog-filter-label {
-  color: #AF4FFF;;
+
+.range-toggle.toggle-min:focus + .label-for-toggle-min {
+  color: #AF4FFF;
 }
 
 
-.range-toggle.toggle-max:focus .catalog-filter-label {
-  color: #AF4FFF;;
+.range-toggle.toggle-max:focus + .label-for-toggle-max {
+  color: #AF4FFF;
 }
-*/
+
 .range-toggle:active {
   background-color: #000000;
   border: 2px solid #000000;
@@ -2628,12 +2798,16 @@ input[type="number"]::-webkit-inner-spin-button {
   left: 0px;
 }
 
+.range-toggle:active .catalog-filter-label {
+  color: #000000;
+}
+
 .toggle-max {
   top: -8px;
   right: -10px;
 }
 
-.range-wrapper-inputs {
+.range-wraper-inputs {
   width: 155px;
   display: flex;
   justify-content: center;
@@ -2645,6 +2819,18 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 59px;
   display: flex;
   opacity: 0.3;
+}
+
+.label-for-toggle-min {
+  position: absolute;
+  top: 17px;
+  left: 0;
+}
+
+.label-for-toggle-max {
+  position: absolute;
+  top: 17px;
+  left: 96px;
 }
 
 .catalog-filter-label:first-child {
@@ -2981,7 +3167,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .delivery-item {
-  display: none;
+  display: block;
 }
 
 .warranty-item {
@@ -2989,5 +3175,5 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .credit-item {
-  display: block;
+  display: none;
 }
