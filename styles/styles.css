@@ -242,7 +242,7 @@ body {
 .distance {
   font-weight: 400;
   font-size: 38px;
-  line-height: 10px;
+  line-height: 25px;
   color: #000000;
 }
 
@@ -315,6 +315,8 @@ body {
 .additionally-info-heading-more {
   max-width: 497px;
   color: #444444;
+  margin-top: 0;
+  letter-spacing: 0.01em;
 }
 
 .order {
@@ -352,7 +354,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   min-height: 120px;
-  margin-bottom: 52px;
+  margin-bottom: 47px;
 }
 
 .delivery-option-item {
@@ -674,7 +676,7 @@ body {
 .product-card-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   color: #000000;
   letter-spacing: -0.02em;
   grid-row: 3/5;
@@ -787,7 +789,7 @@ b {
   height: 70px;
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  padding-right: 30px;
 }
 
 .pagination-prev span {
@@ -1280,7 +1282,7 @@ b {
 
 .contacts-schedule {
   padding: 0;
-  margin-bottom: 67px;
+  margin-bottom: 65px;
   list-style-type: none;
 }
 
@@ -1504,7 +1506,7 @@ b {
 
 .product-card-list-catalog {
   margin-left: 72px;
-  margin-bottom: 52px;
+  margin-bottom: 45px;
   margin-top: 0;
   list-style-type: none;
   gap: 40px 44px;
@@ -1754,7 +1756,7 @@ b {
   content: "";
   position: absolute;
   height: 50px;
-  top: -10px;
+  top: -12px;
   left: -26px;
 }
 
@@ -2235,6 +2237,11 @@ form.navigation-find {
   text-decoration: none;
   z-index: 1;
   display: none;
+}
+
+
+.button-show-more-current {
+  display: block;
 }
 
 .button-show-more::before {
@@ -3227,7 +3234,7 @@ form.navigation-find {
 
 .catalog-filter-group:nth-child(3) {
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
 }
 
 .catalog-filter-group:nth-child(3)::before {
@@ -3454,7 +3461,7 @@ form.navigation-find {
 .sorting-button {
   position: relative;
   padding: 0;
-  margin-right: 19px;
+  margin-right: 12px;
   cursor: pointer;
   width: 11px;
   height: 10px;
@@ -3498,7 +3505,7 @@ form.navigation-find {
 }
 
 .sorting-button-block {
-  margin-left: 330px;
+  margin-left: 340px;
 }
 
 .delivery-item {
