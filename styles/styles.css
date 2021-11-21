@@ -50,6 +50,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  overflow-x: hidden;
 }
 
 .main-index {
@@ -163,8 +164,9 @@ body {
 .navigation-list-info {
   margin-bottom: 52px;
   letter-spacing: 0.1em;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 540px repeat(3, min-content);
+  row-gap: 15px;
   font-family: "Ralewey", "Arial", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -211,6 +213,7 @@ body {
 }
 
 .navigation-item-catalog {
+  grid-row: 1/-5;
   position: relative;
   width: 540px;
 }
@@ -322,7 +325,6 @@ body {
 .order {
   letter-spacing: 0.2em;
   position: relative;
-  height: 20px;
   background-color: #f0f0f0;
   font-family: "Raleway", "Arial", sans-serif;
   font-weight: 800;
@@ -513,13 +515,14 @@ body {
 }
 
 .breadcrumbs {
+  position: relative;
   opacity: 0.6;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   color: #000000;
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs:hover {
@@ -535,20 +538,13 @@ body {
   opacity: 0.3;
   border: none;
 }
-
-.breadcrumbs-main::after {
-  top: 5px;
-  right: -22px;
-  content: "";
-  width: 4px;
-  height: 7px;
-  position: absolute;
-  background-image: url("../image/catalog/for-breadcrumbs.svg");
+.breadcrumbs-item {
+  position: relative;
 }
 
-.breadcrumbs-catalog::after {
-  top: 6px;
-  right: -15px;
+.breadcrumbs-item:not(:last-child)::after {
+  top: 12px;
+  right: -22px;
   content: "";
   width: 4px;
   height: 7px;
@@ -683,7 +679,7 @@ body {
   margin: 0;
 }
 
-b {
+.price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -925,13 +921,10 @@ b {
   list-style-type: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs-list li:nth-child(1) {
-  margin-right: 36px;
-}
-
-.breadcrumbs-list li:nth-child(2) {
+.breadcrumbs-item:not(:last-child) {
   margin-right: 34px;
 }
 
@@ -1008,7 +1001,7 @@ b {
 }
 
 .product-card-box {
-  background: #ffe17f;
+  background-color: #ffe17f;
   width: 160px;
   height: 160px;
 }
@@ -1359,7 +1352,7 @@ b {
   z-index: 1;
 }
 
-.delivery.button::before {
+.button-current::before {
   top: 15px;
   position: absolute;
   background: #ffc700;
@@ -1367,7 +1360,12 @@ b {
   width: 160px;
   height: 8px;
   z-index: -1;
-  left: -15px;
+  left: 0;
+  display: none;
+}
+
+.button-current:focus {
+  outline: none;
 }
 
 .warranty.button {
@@ -1557,7 +1555,7 @@ b {
   color: #af4fff;
 }
 
-.product-card-link-catalog:focus b {
+.product-card-link-catalog:focus .price {
   color: #af4fff;
 }
 
@@ -1728,6 +1726,11 @@ b {
   top: 29px;
   position: absolute;
   right: 33px;
+}
+
+.rare-product {
+  display: block;
+  padding: 0 160px 0 130px;
 }
 
 .rare-icon {
@@ -2752,7 +2755,10 @@ form.navigation-find {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 20px;
-  background: #f0f0f0;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: 326px 24px;
+  background-image: url("../image/index-html/modal/man-logo-for-modal.svg");
   width: 340px;
   height: 60px;
   border: none;
@@ -2763,7 +2769,10 @@ form.navigation-find {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 20px;
-  background: #f0f0f0;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-image: url("../image/index-html/modal/modal-email.svg");
+  background-position: 325px 24px;
   width: 340px;
   height: 60px;
   border: none;
@@ -3008,7 +3017,7 @@ form.navigation-find {
 }
 
 .auth-form-field:hover {
-  background: #ebebeb;
+  background-color: #ebebeb;
 }
 
 .field-for-number:focus {
@@ -3016,7 +3025,7 @@ form.navigation-find {
 }
 
 .auth-form-field:not(:placeholder-shown) {
-  background: #ffffff;
+  background-color: #ffffff;
   outline: 3px solid #000000;
 }
 
@@ -3063,7 +3072,7 @@ form.navigation-find {
 }
 
 .auth-form-field:disabled {
-  background: #ffffff;
+  background-color: #ffffff;
   outline: 3px solid #ff3d3d;
 }
 
